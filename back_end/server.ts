@@ -1,10 +1,10 @@
-// index.js
 
 /**
  * Required External Modules
  */
- const express = require("express");
- const path = require("path");
+ import express from "express";
+ import path from "path";
+ import { Request, Response } from 'express';
 /**
  * App Variables
  */
@@ -17,7 +17,7 @@
 /**
  * Routes Definitions
  */
- app.get("/", (req, res) => {
+ app.get("/", (req: Request, res:Response) => {
     res.status(200).send("WHATABYTE: Food For Devs");
   });
 /**
