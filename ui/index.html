@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.scss">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="./assets/styles/css/index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+  <audio id="my-audio" src="https://www.bensound.com/bensound-music/bensound-moose.mp3"></audio>
+  
+  <div id="mainContainer" class="mainContainer">
+  <div class="circle-container" id="audio_player">
+            <div class="circle-crop-top">
+                <div class="circle-parent">
+                    <div class="circle"><p>Mood</p></div>
+                </div>   
+            </div>
+            <div class="circle-first-left">
+                <div class="circle-parent">
+                    <div class="circle"><p><button class="sound-bars-btn" onclick="volume(true)">+</button></p></div>
+                </div>
+            </div>
+            <div class="circle-first-right">
+                <div class="circle-parent">
+                    <div class="circle">
+                    <p><button class="sound-bars-btn" onclick="volume(false)">-</button>
+                    </p></div>
+                </div>
+            </div>
+            <div class="circle-second-left">
+                <div class="circle-parent">
+                    <div class="circle">
+                    <p><button class="mute-button">
+    <img id="unmuted" src="./assets/svg/32px-Speaker_Icon.svg.png" onclick="unmute()">
+    </button></p></div>
+                </div>
+            </div>
+            <div class="circle-second-right">
+                <div class="circle-parent">
+                    <div class="circle"><p> <button class="unmute-button">
+    <img id="muted" src="./assets/svg/32px-Mute_Icon.svg.png" onclick="mute()">
+  </button></p></div>
+                </div>
+            </div>
+            <div class="circle-bottom">
+                <div class="circle-parent">
+                    <div class="circle"> <p><button class="shuffle-button">
+    <img id="shuffle-btn" src="./assets/svg/shuffle-24.png" onclick="shuffle()">
+  </button></p></div>
+                </div>
+            </div>
+        </div> 
+  <div class="toggleWrapper animate__animated animate__lightSpeedInLeft">
+  <input type="checkbox" class="dn" id="dn"/>
+  <label for="dn" class="toggle">
+    <span class="toggle__handler">
+    </span>
+  </label>
+  </div>
+</div>
+
+	<script src="index.js"></script>
+  </body>
+</html>
